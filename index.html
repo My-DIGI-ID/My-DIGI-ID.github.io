@@ -1,95 +1,306 @@
-<html>
-	<head>
-		<title>My DIGI ID</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-		<link rel="stylesheet" href="style.css">
-	</head>
-<body>
-	<div class="header">
-		<h3>SSI – Digital Identity (Hotel Check-In)</h3>
-	</div>
-	
-	<div class="main-wrapper">
-		<div class="content-wrapper">
-		<p>
-		The hotel check-in use case shall enable travelers to digitally check-in to a hotel by presenting two credentials to the hotel. The application covers both the issuing services required to issue the credential to the traveler, as well as the verification application used by hotels to check in the guest.
-		</p>
-
-		<h4>Introduction</h4>
-		<p>
-		With this application a company can issue verifiable corporate credentials to their employees that certify that this employee is working for the respective company. Also, hotels (representing the verifier) can request two credentials from a wallet app (not part of this repository) in order to get the data. Based on the data from the two credentials a digital registration form can be created as well as the guest can be checked in.
-		</p>
-		<img src="images/Picture01.png">
 
 
-		<h4>General Docs</h4>
-		<p>The overall architecture and the major components of the application within this repository is being shown in the diagram below.</p>
-		<img src="images/Picture02.png">
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>My Digi ID</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <!-- <a href="index.html">logo here</a> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="index.html#home">My Digi ID</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html#docs">General Docs</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html#how-to-use">How to use</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="new-frontend.html">Front end</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="new-backend.html">Back end</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="https://github.com/My-DIGI-ID">Go to repos</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div class="container">
+            <div class="row d_flex justify-content-between">
+               <div class="col-md-5">
+                  <div class="text-bg">
+                     <h1>My Digi ID</h1>
+                     <span>Hotel Check-in use case</span>
+                     <p>The hotel check-in use case shall enable travelers to <b>digitally check-in by presenting two credentials</b> to the hotel. The application covers both the issuing services required to issue the credential to the traveler, as well as the verification application used by hotels to check in the guest.</p>
+                     <a href="#introduction">Read more</a>
+                  </div>
+               </div>
+               <div class="col-md-6 align-self-center justify-self-end">
+                  <div class="text-img">
+                     <figure><img width="90%" src="images/app.png" /></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+      <div id="introduction" class="hosting">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Introduction</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="web_hosting">
+                     <p>With this application a company can issue <b>verifiable corporate credentials</b> to their employees that certify that this employee is working for the respective company. Also, hotels (representing the verifier) can request two credentials from a wallet app (not part of this repository) in order to get the data. Based on the data from the two credentials a digital registration form can be created as well as the guest can be checked in.</p>
+                     <figure><img src="images/Picture01.png" width="75%" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     <div id="docs" class="hosting">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>General Docs</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="web_hosting">
+                     <p>The overall architecture and the major components of the application within this repository is being shown in the diagram below.</p>
+                     <figure><img src="images/Picture02.png" width="75%" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 
-		<h4>How to Use</h4>
-		<p>The application consists of the following components:</p>
+      <div id="how-to-use" class="Services">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 mb-4">
+                  <div class="titlepage">
+                     <h2>How to use</h2>
+                     <p>The application consists of the Company and Hotel</p>
+                  </div>
+               </div>
+            </div>
 
-		<h5>Company</h5>
-		<ul>
-			<li>
-				Company Tails Server 
-				<p>A backend component responsible for storing and establishing a server to store and retrieve tails files for credential definitions.</p>
-			</li>
-			<li>
-				Company Aries Cloud Agent
-				<p>A backend component used for handling SSI interactions of a company. The agent issues credentials to the employees of a company.</p>
-			</li>
-			<li>
-				Company MongoDB
-				<p>A database that is used as the persistence layer for the Company Controller.</p>
-			</li>
-			<li>
-				Company Controller
-				<p>A backend component that provides a REST interface for Company UI and integrates with the Company Cloudagent. The Company DB is used as the persistence layer for the Company Controller.</p>
-			</li>
-			<li>
-				Company UI
-				<p>A web application that provides functionality for company admins. It allows basic branding by configuring a company name and logo. The web application is implemented using the Angular framework and is served via an NGINX web server</p>
-			</li>
-		</ul>
+            <div class="row">
+               <div class="col-md-12 mb-4 mt-5">
+                  <div class="titlepage">
+                     <h2>Company</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/tails-server.png" alt="#" /></i>
+                     <h3>Company Tails Server</h3>
+                     <p>A backend component responsible for storing and establishing a server to store and retrieve tails files for credential definitions.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/cloud-agent.png" alt="#" /></i>
+                     <h3>Company Aries Cloud Agent</h3>
+                     <p>A backend component used for handling SSI interactions of a company. The agent issues credentials to the employees of a company.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/mongo-db.png" alt="#" /></i>
+                     <h3>Company MongoDB</h3>
+                     <p>A database that is used as the persistence layer for the Company Controller.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/controller.png" alt="#" /></i>
+                     <h3>Company Controller</h3>
+                     <p>A backend component that provides a REST interface for Company UI and integrates with the Company Cloudagent. The Company DB is used as the persistence layer for the Company Controller.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/ui.png" alt="#" /></i>
+                     <h3>Company UI</h3>
+                     <p>A web application that provides functionality for company admins. It allows basic branding by configuring a company name and logo. The web application is implemented using the Angular framework and is served via an NGINX web server</p>
+                  </div>
+               </div>
+            </div>
 
-		<br>
-		<h5>Hotel</h5>
-		<ul>
-			<li>
-				Hotel Aries Cloud Agent
-				<p>A backend component used for handling SSI interactions of a hotel. The agent requests and handles proofs by hotel guests derived from their credentials.</p>
-			</li>
-			<li>
-				Hotel MongoDB
-				<p>A database that is used as the persistence layer for the Hotel Controller.</p>
-			</li>
-			<li>
-				Hotel Controller
-				<p>A backend component that provides a REST interface for the Hotel UI and integrates with the Hotel Cloud Agent and the Hotel Integration Service. The Hotel Mongo DB is used as the persistence layer for the Hotel Controller.</p>
-			</li>
-			<li>
-				Hotel UI
-				<p>A web application that provides functionality for hotel users and admins. It allows basic branding by configuring a company logo. The web application is implemented using the Angular framework and is served via an NGINX web server.</p>
-			</li>
-			<li>
-				Hotel Integration Service
-				<p>A backend component that provides a REST interface for the Hotel Controller and integrates with existing Property Management Systems (PMS).</p>
-			</li>
-		</ul>
+            <div class="row">
+               <div class="col-md-12 mb-4 mt-5">
+                  <div class="titlepage">
+                     <h2>Hotel</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/cloud-agent.png" alt="#" /></i>
+                     <h3>Hotel Aries Cloud Agent</h3>
+                     <p>A backend component used for handling SSI interactions of a hotel. The agent requests and handles proofs by hotel guests derived from their credentials.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/mongo-db.png" alt="#" /></i>
+                     <h3>Hotel MongoDB</h3>
+                     <p>A database that is used as the persistence layer for the Hotel Controller.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/controller.png" alt="#" /></i>
+                     <h3>Hotel Controller</h3>
+                     <p>A backend component that provides a REST interface for the Hotel UI and integrates with the Hotel Cloud Agent and the Hotel Integration Service. The Hotel Mongo DB is used as the persistence layer for the Hotel Controller.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/ui.png" alt="#" /></i>
+                     <h3>Hotel UI</h3>
+                     <p>A web application that provides functionality for hotel users and admins. It allows basic branding by configuring a company logo. The web application is implemented using the Angular framework and is served via an NGINX web server.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/integration-service.png" alt="#" /></i>
+                     <h3>Hotel Integration Service</h3>
+                     <p>A backend component that provides a REST interface for the Hotel Controller and integrates with existing Property Management Systems (PMS).</p>
+                  </div>
+               </div>
+            </div>
 
-		<p>In order to enable an end-to-end usage flow, you need to connect to a Hyperledger Indy Network and install a wallet app. Both are not included in this repository.</p>
+            <div class="row">
+               <div class="col-md-12 mb-4 mt-5">
+                  <div class="titlepage">
+                     <h2>View Documentation</h2>
+                     <div class="text-bg">
+                        <a href="new-frontend.html">Front-end</a>
+                        <a href="new-backend.html">Back-end</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div id="disclaimer" class="why">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Disclaimer</h2>
+                     <p>This application is still under development. All components have been unit and end-to-end tested to the best of our knowledge and belief. However, no specific security tests (e.g. penetration test) or other measures have been conducted.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 
-		<br>
-		<a href="frontend.html">FrontEnd Doc</a>
-		<a href="backend.html">BackEnd Doc</a>
-		<br>
-
-		<h5>Disclaimer</h5>
-		<p>
-			This application is still under development. All components have been unit and end-to-end tested to the best of our knowledge and belief. However, no specific security tests (e.g. penetration test) or other measures have been conducted.
-		</p>
-	</div>
-	</div>
-</body>
+      <footer>
+         <div class="footer mt-5">
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2021 All Rights Reserved. <a href="https://html.design/">Design Reference</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
 </html>
+
