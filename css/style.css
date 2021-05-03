@@ -155,7 +155,11 @@ img {
  :focus {
      outline: 0;
 }
-
+.btn-repos {
+     background-color: #0c0f38 !important;
+     color: #fff !important;
+     margin-right: 50px;
+}
 .btn-custom {
      margin-top: 20px;
      background-color: transparent !important;
